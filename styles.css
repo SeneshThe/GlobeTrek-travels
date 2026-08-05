@@ -1,0 +1,909 @@
+/* ================================
+   GLOBETREK ADVENTURES
+   CUSTOM STYLES
+================================ */
+
+/* ---------- ROOT COLORS ---------- */
+
+:root {
+    --primary-color: #087f8c;
+    --secondary-color: #00b4d8;
+    --accent-color: #ffb703;
+    --success-color: #2a9d8f;
+    --dark-color: #023047;
+    --light-bg: #f8fbfc;
+    --white: #ffffff;
+}
+
+
+/* ---------- GENERAL ---------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: #333;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+
+.transparent-navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+   background: black;
+
+    padding: 15px 0;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Black background after scrolling */
+
+.transparent-navbar.scrolled {
+
+    background-color: transparent;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow: none;
+      
+}
+
+
+/* Logo */
+
+.transparent-navbar .navbar-brand {
+
+    color: white;
+
+    height: 50px;
+
+    width: auto;
+}
+
+.transparent-navbar .navbar-brand span {
+
+    color: #ffb703;
+}
+
+
+/* Navigation links */
+
+.transparent-navbar .nav-link {
+
+    color: white !important;
+
+    font-weight: 500;
+
+    margin: 0 10px;
+
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
+.transparent-navbar .nav-link:hover {
+
+    color: #ffb703 !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+
+/* Login button */
+
+.transparent-navbar .btn-travel {
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    white-space: nowrap;
+}
+
+
+.about-section {
+
+    padding: 100px 8%;
+    background: #ffffff;
+
+}
+
+
+.about-container {
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    gap: 30px;
+
+}
+
+
+
+.about-content {
+
+    padding-right: 40px;
+
+}
+
+
+
+.welcome-text {
+
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 20px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+
+.welcome-text span {
+
+    width:10px;
+    height:10px;
+    background:#f5c518;
+    border-radius:50%;
+    display:block;
+
+}
+
+
+
+.about-content h1 {
+
+    font-family: "Playfair Display", serif;
+    font-size:52px;
+    line-height:1.2;
+    color:#111;
+    margin-bottom:40px;
+
+}
+
+
+
+.learn-btn {
+
+    color:#b79500;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+
+}
+
+
+.learn-btn span {
+
+    font-size:12px;
+
+}
+
+
+
+.about-content p {
+
+    margin-top:45px;
+    font-size:17px;
+    line-height:1.8;
+    color:#333;
+
+}
+
+
+
+.about-content ul {
+
+    margin-top:25px;
+    padding-left:20px;
+
+}
+
+
+.about-content li {
+
+    margin-bottom:20px;
+    line-height:1.7;
+    font-size:16px;
+
+}
+
+
+/* FEATURES */
+
+.features {
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    margin-top:50px;
+    gap:35px;
+
+}
+
+
+
+.feature {
+
+    text-align:center;
+
+}
+
+
+
+.icon {
+
+    font-size:35px;
+    margin-bottom:15px;
+    color:#d4b530;
+
+}
+
+
+
+.feature h3 {
+
+    font-family:"Playfair Display",serif;
+    font-size:18px;
+    margin:5px 0;
+
+}
+
+
+
+.feature p {
+
+    margin:0;
+    font-size:14px;
+    color:#555;
+
+}
+
+
+
+/* IMAGE */
+
+.about-image {
+
+    height:100%;
+    position:relative;
+
+}
+
+
+
+.about-image img {
+
+    width:100%;
+    height:700px;
+    object-fit:cover;
+
+}
+
+
+
+/* Add curved edge like reference */
+
+.about-image::before {
+
+    content:"";
+    position:absolute;
+    left:-80px;
+    top:0;
+    width:160px;
+    height:100%;
+    background:white;
+    border-radius:50%;
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+
+.about-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.about-content{
+
+    padding-right:0;
+
+}
+
+
+.about-content h1{
+
+    font-size:40px;
+
+}
+
+
+.about-image img{
+
+    height:500px;
+
+}
+
+
+.features{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.features{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+
+
+/* ---------- HERO SECTION ---------- */
+
+.hero-section {
+
+    position: relative;
+
+    height: 100vh;
+
+    min-height: 700px;
+
+    overflow: hidden;
+
+}
+
+
+.hero-image {
+
+    width: 100%;
+
+    height: 100vh;
+
+    min-height: 700px;
+
+    object-fit: cover;
+
+}
+
+
+
+/* ---------- HERO CONTENT BOX ---------- */
+
+.hero-box {
+
+    position: absolute;
+
+    top: 50%;
+    left: 8%;
+
+    transform: translateY(-50%);
+
+    width: 450px;
+
+    padding: 40px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    color: white;
+
+    z-index: 10;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.3);
+}
+
+
+.hero-box h1 {
+
+    font-size: 52px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero-box h3 {
+
+    color: var(--accent-color);
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero-box p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =================================
+   DARK OVERLAY
+================================= */
+
+.hero-overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.20)
+        );
+}
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+
+/* ---------- CUSTOM BUTTONS ---------- */
+
+.btn-travel {
+    background-color: var(--accent-color);
+    border: none;
+    color: #222;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-travel:hover {
+    background-color: #fb8500;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-outline-travel {
+    border: 2px solid white;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.btn-outline-travel:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+
+/* ---------- SEARCH BOX ---------- */
+
+.search-box {
+    margin-top: -60px;
+    position: relative;
+    z-index: 20;
+}
+
+.search-card {
+    border: none;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.search-card label {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+
+/* ---------- SECTION TITLE ---------- */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    color: var(--dark-color);
+}
+
+.section-title span {
+    color: var(--primary-color);
+}
+
+
+/* ---------- TOUR CARDS ---------- */
+
+.tour-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+
+    transition: 0.4s;
+
+    height: 100%;
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.18);
+}
+
+.tour-card img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.tour-card:hover img {
+    transform: scale(1.08);
+}
+
+.tour-card .card-body {
+    padding: 25px;
+}
+
+.tour-price {
+    color: var(--success-color);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* ---------- BADGES ---------- */
+
+.badge-adventure {
+    background-color: #2a9d8f;
+}
+
+.badge-beach {
+    background-color: #00b4d8;
+}
+
+.badge-cultural {
+    background-color: #f4a261;
+}
+
+.badge-wildlife {
+    background-color: #e63946;
+}
+
+
+/* ---------- DESTINATION CARDS ---------- */
+
+.destination-card {
+    height: 220px;
+    border: none;
+    border-radius: 20px;
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.destination-card:hover {
+    transform: scale(1.04);
+}
+
+.destination-overlay {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 25px;
+
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+
+/* ---------- FEATURE CARDS ---------- */
+
+.feature-card {
+    border: none;
+    border-radius: 20px;
+    padding: 35px 20px;
+
+    background-color: white;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    background-color: var(--primary-color);
+    color: white;
+
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+/* ---------- DASHBOARD ---------- */
+
+.dashboard-sidebar {
+    min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #023047,
+        #087f8c
+    );
+}
+
+.dashboard-sidebar a {
+    display: block;
+
+    color: white;
+
+    padding: 15px 20px;
+
+    transition: 0.3s;
+}
+
+.dashboard-sidebar a:hover,
+.dashboard-sidebar a.active {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.2
+    );
+
+    border-left: 4px solid
+        var(--accent-color);
+}
+
+
+/* ---------- STATISTICS CARDS ---------- */
+
+.stat-card {
+    border: none;
+    border-radius: 18px;
+    padding: 25px;
+    color: white;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+}
+
+.stat-blue {
+    background: linear-gradient(
+        135deg,
+        #0077b6,
+        #00b4d8
+    );
+}
+
+.stat-green {
+    background: linear-gradient(
+        135deg,
+        #2a9d8f,
+        #52b788
+    );
+}
+
+.stat-orange {
+    background: linear-gradient(
+        135deg,
+        #f77f00,
+        #fcbf49
+    );
+}
+
+.stat-red {
+    background: linear-gradient(
+        135deg,
+        #d62828,
+        #e63946
+    );
+}
+
+
+/* ---------- LOGIN PAGE ---------- */
+
+.login-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 128, 128, 0.6),
+            rgba(2, 48, 71, 0.7)
+        ),
+        url("../images/hero.jpg");
+
+    background-size: cover;
+}
+
+.login-card {
+    border: none;
+    border-radius: 25px;
+    padding: 40px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+/* ---------- FORM INPUTS ---------- */
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    padding: 12px;
+
+    border: 1px solid #d5e1e5;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+
+    box-shadow:
+        0 0 0 0.2rem
+        rgba(8, 127, 140, 0.2);
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer h5 {
+    color: var(--accent-color);
+}
+
+.footer a {
+    color: #dceff2;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid
+        rgba(255, 255, 255, 0.2);
+
+    margin-top: 30px;
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .search-box {
+        margin-top: 20px;
+    }
+
+}
+

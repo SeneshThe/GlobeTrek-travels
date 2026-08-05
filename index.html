@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+
+    <title>
+        GlobeTrek Adventures
+    </title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet"
+          href="styles.css">
+
+</head>
+
+<body>
+
+    <nav id="mainNavbar"
+          class="navbar navbar-expand-lg transparent-navbar">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            🌍 Globe<span>Trek</span>
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+
+            <ul class="navbar-nav ms-auto align-items-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Tour Packages
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Accommodation
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Travel Guides
+                    </a>
+                </li>
+
+                <li class="nav-item ms-3">
+                    <a class="btn btn-travel" href="login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<script>
+
+window.addEventListener("scroll", function () {
+
+    const navbar =
+        document.getElementById("mainNavbar");
+
+    if (window.scrollY > 50) {
+
+        navbar.classList.add("scrolled");
+
+    } else {
+
+        navbar.classList.remove("scrolled");
+
+    }
+
+});
+
+</script>
+
+<section class="hero-section position-relative">
+
+    <!-- Master Hero Image -->
+    <img src="sigiriya.jpg"
+         class="hero-image"
+         alt="Travel Adventure">
+
+
+    <!-- Dark Overlay -->
+    <div class="hero-overlay"></div>
+
+
+    <!-- Hero Content -->
+   <div class="container">
+
+    <div class="hero-box">
+
+        <h1>
+            Explore Sri Lanka
+        </h1>
+
+        <h3>
+            The Island of Endless Adventures
+        </h3>
+
+        <p>
+            Discover breathtaking beaches,
+            ancient culture, wildlife and mountains.
+        </p>
+
+        <a href="#packages"
+           class="btn btn-travel">
+            Explore Tours
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- welcome page -->
+
+<section class="about-section">
+
+    <div class="about-container">
+
+        <!-- Left Content -->
+        <div class="about-content">
+
+            <div class="welcome-text">
+                <span></span>
+                Welcome to GlobeTrek Adventures
+            </div>
+
+            <h1>
+                Discover The Heart<br>
+                Of Sri Lankan Beauty
+            </h1>
+
+            <a href="#" class="learn-btn">
+                Learn More About Us <span>▶</span>
+            </a>
+
+            <p>
+                Experience paradise like never before. From golden beaches and
+                ancient kingdoms to breathtaking mountains and rich culture,
+                Sri Lanka offers unforgettable journeys in every corner of the island.
+            </p>
+
+
+            <ul>
+                <li>
+                    With years of experience exploring Sri Lanka, we bring you
+                    authentic travel experiences beyond ordinary tours.
+                </li>
+
+                <li>
+                    Our expert travel team creates personalized adventures
+                    with comfort, safety, and unforgettable memories.
+                </li>
+            </ul>
+
+
+            <!-- Features -->
+
+            <div class="features">
+
+                <div class="feature">
+                    <div class="icon">🌴</div>
+                    <h3>10+ Years</h3>
+                    <p>Travel Experience</p>
+                </div>
+
+
+                <div class="feature">
+                    <div class="icon">📍</div>
+                    <h3>100+</h3>
+                    <p>Destinations Covered</p>
+                </div>
+
+
+                <div class="feature">
+                    <div class="icon">👥</div>
+                    <h3>Expert</h3>
+                    <p>Local Guides</p>
+                </div>
+
+
+                <div class="feature">
+                    <div class="icon">🏝️</div>
+                    <h3>Unique</h3>
+                    <p>Island Experiences</p>
+                </div>
+
+
+                <div class="feature">
+                    <div class="icon">⭐</div>
+                    <h3>5000+</h3>
+                    <p>Happy Travelers</p>
+                </div>
+
+
+                <div class="feature">
+                    <div class="icon">🚙</div>
+                    <h3>Premium</h3>
+                    <p>Transport Service</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Right Image -->
+
+        <div class="about-image">
+
+            <img src="ayubowan image.png" 
+                 alt="Sri Lankan Travel Guide">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+<section class="hero-section">
+
+<!-- ================= SEARCH ================= -->
+
+<div class="container search-box">
+
+    <div class="card search-card">
+
+        <div class="row g-3">
+
+            <div class="col-md-4">
+
+                <label>
+                    Destination
+                </label>
+
+                <select
+                    class="form-select">
+
+                    <option>
+                        Select Destination
+                    </option>
+
+                    <option>
+                        Ella
+                    </option>
+
+                    <option>
+                        Kandy
+                    </option>
+
+                    <option>
+                        Mirissa
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <label>
+                    Travel Date
+                </label>
+
+                <input
+                    type="date"
+                    class="form-control">
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <label>
+                    Travelers
+                </label>
+
+                <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Number of travelers">
+
+            </div>
+
+
+            <div class="col-md-2
+                        d-flex
+                        align-items-end">
+
+                <button
+                    class="btn btn-success w-100">
+
+                    🔍 Search
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= PACKAGES ================= -->
+
+<section id="packages">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Popular
+                <span>Tour Packages</span>
+            </h2>
+
+            <p>
+                Find your next unforgettable adventure
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- PACKAGE 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card tour-card">
+
+                    <img
+                        src="https://beyondwildplaces.com/wp-content/uploads/2024/02/Things-to-do-in-Ella.jpg"
+                        alt="Ella">
+
+                    <div class="card-body">
+
+                        <span class="badge
+                                     badge-adventure">
+
+                            Adventure
+
+                        </span>
+
+                        <h4 class="mt-3">
+
+                            Ella Adventure
+
+                        </h4>
+
+                        <p>
+                            🌄 Explore the beautiful
+                            mountains of Ella.
+                        </p>
+
+                        <p>
+                            🕒 3 Days / 2 Nights
+                        </p>
+
+                        <div
+                            class="d-flex
+                                   justify-content-between
+                                   align-items-center">
+
+                            <span class="tour-price">
+
+                                LKR 75,000
+
+                            </span>
+
+                            <a href="#"
+                               class="btn btn-primary">
+
+                                Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGE 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card tour-card">
+
+                    <img
+                        src="https://hungariandreamers.com/wp-content/uploads/2023/09/Mirissa-Sri-Lanka4-819x1024.jpg"
+                        alt="Mirissa">
+
+                    <div class="card-body">
+
+                        <span class="badge
+                                     badge-beach">
+
+                            Beach
+
+                        </span>
+
+                        <h4 class="mt-3">
+
+                            Mirissa Escape
+
+                        </h4>
+
+                        <p>
+                            🏖️ Relax and enjoy
+                            tropical beaches.
+                        </p>
+
+                        <p>
+                            🕒 2 Days / 1 Night
+                        </p>
+
+                        <div
+                            class="d-flex
+                                   justify-content-between
+                                   align-items-center">
+
+                            <span class="tour-price">
+
+                                LKR 45,000
+
+                            </span>
+
+                            <a href="#"
+                               class="btn btn-primary">
+
+                                Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGE 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card tour-card">
+
+                    <img
+                        src="https://www.srilankatrip.com.lk/_next/image?url=%2Fimages%2Fdestinations%2Fkandy.webp&w=3840&q=75"
+                        alt="Kandy">
+
+                    <div class="card-body">
+
+                        <span class="badge
+                                     badge-cultural">
+
+                            Cultural
+
+                        </span>
+
+                        <h4 class="mt-3">
+
+                            Kandy Heritage
+
+                        </h4>
+
+                        <p>
+                            🏛️ Discover Sri Lankan
+                            culture and history.
+                        </p>
+
+                        <p>
+                            🕒 3 Days / 2 Nights
+                        </p>
+
+                        <div
+                            class="d-flex
+                                   justify-content-between
+                                   align-items-center">
+
+                            <span class="tour-price">
+
+                                LKR 60,000
+
+                            </span>
+
+                            <a href="#"
+                               class="btn btn-primary">
+
+                                Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
