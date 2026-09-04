@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Your Trip | GlobeTrek Adventures</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="booking-header">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <span class="small-title">
+                    GLOBETREK ADVENTURES
+                </span>
+
+                <h1>Book Your Adventure</h1>
+
+                <p>
+                    Complete the form below to reserve your unforgettable
+                    Sri Lankan adventure.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING SECTION ================= -->
+
+    <section class="booking-section">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- ================= LEFT SIDE ================= -->
+
+                <div class="col-lg-8">
+
+                    <div class="booking-card">
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+
+                            <div>
+                                <h3>Booking Details</h3>
+                                <p>
+                                    Enter your travel information
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <form id="booking Form" action="booking.php" method="POST">
+
+                            <!-- PACKAGE -->
+
+                            <div class="form-section">
+
+                                <div class="mb-3">
+
+                                    <label for="package" class="form-label">
+                                        Tour Package
+                                    </label>
+
+                                    <input
+                                         type="text"
+                                         class="form-control"
+                                         id="package"
+                                         name="package"
+                                          readonly
+                                          required>
+
+                                     </div>
+
+                                </div>
+
+
+                            <!-- TRAVEL INFORMATION -->
+
+                            <div class="form-section">
+
+                                <h5>
+                                    <i class="bi bi-airplane"></i>
+                                    Travel Information
+                                </h5>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-3">
+
+                                        <label
+                                            for="travelDate"
+                                            class="form-label">
+                                            Travel Date
+                                        </label>
+
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            id="travelDate"
+                                            name="travel_date"
+                                            required>
+
+                                        <small class="form-help">
+                                            Bookings close 3 days before
+                                            the travel date.
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="col-md-6 mb-3">
+
+                                        <label
+                                            for="travelers"
+                                            class="form-label">
+
+                                            Number of Travelers
+                                        </label>
+
+                                        <select
+                                            class="form-select"
+                                            id="travelers"
+                                            name="travelers"
+                                            required>
+
+                                            <option value="1">
+                                                1 Traveler
+                                            </option>
+
+                                            <option value="2">
+                                                2 Travelers
+                                            </option>
+
+                                            <option value="3">
+                                                3 Travelers
+                                            </option>
+
+                                            <option value="4">
+                                                4 Travelers
+                                            </option>
+
+                                            <option value="5">
+                                                5 Travelers
+                                            </option>
+
+                                            <option value="6">
+                                                6 Travelers
+                                            </option>
+
+                                            <option value="7">
+                                                7 Travelers
+                                            </option>
+
+                                            <option value="8">
+                                                8 Travelers
+                                            </option>
+
+                                            <option value="9">
+                                                9 Travelers
+                                            </option>
+
+                                            <option value="10">
+                                                10 Travelers
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- CUSTOMER INFORMATION -->
+
+                            <div class="form-section">
+
+                                <h5>
+                                    <i class="bi bi-person"></i>
+                                    Customer Information
+                                </h5>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-3">
+
+                                        <label
+                                            for="firstName"
+                                            class="form-label">
+
+                                            First Name
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="firstName"
+                                            name="first_name"
+                                            placeholder="Enter first name"
+                                            required>
+
+                                    </div>
+
+
+                                    <div class="col-md-6 mb-3">
+
+                                        <label
+                                            for="lastName"
+                                            class="form-label">
+
+                                            Last Name
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="lastName"
+                                            name="last_name"
+                                            placeholder="Enter last name"
+                                            required>
+
+                                    </div>
+
+
+                                    <div class="col-md-6 mb-3">
+
+                                        <label
+                                            for="email"
+                                            class="form-label">
+
+                                            Email Address
+                                        </label>
+
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            name="email"
+                                            placeholder="example@email.com"
+                                            required>
+
+                                    </div>
+
+
+                                    <div class="col-md-6 mb-3">
+
+                                        <label
+                                            for="phone"
+                                            class="form-label">
+
+                                            Phone Number
+                                        </label>
+
+                                        <input
+                                            type="tel"
+                                            class="form-control"
+                                            id="phone"
+                                            name="phone"
+                                            placeholder="07X XXX XXXX"
+                                            required>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- OPTIONS -->
+
+                            <div class="form-section">
+
+                                <h5>
+                                    <i class="bi bi-plus-circle"></i>
+                                    Additional Services
+                                </h5>
+
+
+                                <div class="option-box">
+
+                                    <div class="form-check">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="accommodation"
+                                            name="accommodation"
+                                            value="10000">
+
+                                        <label
+                                            class="form-check-label"
+                                            for="accommodation">
+
+                                            <strong>
+                                                Add Accommodation
+                                            </strong>
+
+                                            <span>
+                                                + Rs. 10,000 per traveler
+                                            </span>
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="option-box">
+
+                                    <div class="form-check">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="transport"
+                                            name="transport"
+                                            value="7500">
+
+                                        <label
+                                            class="form-check-label"
+                                            for="transport">
+
+                                            <strong>
+                                                Add Private Transport
+                                            </strong>
+
+                                            <span>
+                                                + Rs. 7,500 per traveler
+                                            </span>
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- SPECIAL REQUEST -->
+
+                            <div class="form-section">
+
+                                <h5>
+                                    <i class="bi bi-chat-left-text"></i>
+                                    Special Requests
+                                </h5>
+
+                                <textarea
+                                    class="form-control"
+                                    id="specialRequest"
+                                    name="special_request"
+                                    rows="4"
+                                    placeholder="Any special requirements or requests?"></textarea>
+
+                            </div>
+
+
+                            <!-- TERMS -->
+
+                            <div class="terms-box">
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id="terms"
+                                        required>
+
+                                    <label
+                                        class="form-check-label"
+                                        for="terms">
+
+                                        I agree to the booking terms and
+                                        conditions.
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn confirm-btn">
+
+                                <i class="bi bi-check-circle"></i>
+                                Confirm Booking
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= RIGHT SIDE ================= -->
+
+                <div class="col-lg-4">
+
+                    <div class="summary-card">
+
+                        <div class="summary-title">
+
+                            <i class="bi bi-receipt"></i>
+
+                            <h3>Booking Summary</h3>
+
+                        </div>
+
+
+                        <div class="summary-item">
+
+                            <span>Package</span>
+
+                            <strong id="summaryPackage">
+                                Not selected
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-item">
+
+                            <span>Travel Date</span>
+
+                            <strong id="summaryDate">
+                                Not selected
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-item">
+
+                            <span>Travelers</span>
+
+                            <strong id="summaryTravelers">
+                                1
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-item">
+
+                            <span>Package Price</span>
+
+                            <strong id="packagePrice">
+                                Rs. 0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-item">
+
+                            <span>Additional Services</span>
+
+                            <strong id="extraPrice">
+                                Rs. 0
+                            </strong>
+
+                        </div>
+
+
+                        <hr>
+
+
+                        <div class="total-row">
+
+                            <span>Total</span>
+
+                            <strong id="totalPrice">
+                                Rs. 0
+                            </strong>
+
+                        </div>
+
+
+                        <!-- BOOKING STATUS -->
+
+                        <div
+                            id="bookingStatus"
+                            class="booking-status">
+
+                            <i class="bi bi-info-circle"></i>
+
+                            Select your package and travel date.
+
+                        </div>
+
+
+                        <!-- INFO -->
+
+                        <div class="summary-info">
+
+                            <h5>
+                                <i class="bi bi-shield-check"></i>
+                                Booking Information
+                            </h5>
+
+                            <ul>
+
+                                <li>
+                                    Free booking consultation
+                                </li>
+
+                                <li>
+                                    Secure customer information
+                                </li>
+
+                                <li>
+                                    Flexible travel options
+                                </li>
+
+                                <li>
+                                    Confirmation after booking
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SUCCESS MODAL ================= -->
+
+    <div
+        class="modal fade"
+        id="successModal"
+        tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content success-modal">
+
+                <div class="modal-body text-center">
+
+                    <div class="success-icon">
+                        <i class="bi bi-check-lg"></i>
+                    </div>
+
+                    <h3>Booking Submitted!</h3>
+
+                    <p>
+                        Your booking request has been successfully
+                        submitted to GlobeTrek Adventures.
+                    </p>
+
+                    <p class="booking-reference">
+                        Booking Reference:
+                        <strong id="bookingReference"></strong>
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn confirm-btn"
+                        data-bs-dismiss="modal">
+
+                        Done
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <h4>
+                        🌍 GlobeTrek Adventures
+                    </h4>
+
+                    <p>
+                        Discover Sri Lanka through unforgettable
+                        journeys and experiences.
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-6 text-md-end">
+
+                    <p>
+                        © 2026 GlobeTrek Adventures
+                    </p>
+
+                    <p>
+                        All Rights Reserved.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <script>
+
+    // ==========================================
+    // GET FORM ELEMENTS
+    // ==========================================
+
+    const packageInput =
+        document.getElementById("package");
+
+    const travelDate =
+        document.getElementById("travelDate");
+
+    const travelers =
+        document.getElementById("travelers");
+
+    const accommodation =
+        document.getElementById("accommodation");
+
+    const transport =
+        document.getElementById("transport");
+
+    const summaryPackage =
+        document.getElementById("summaryPackage");
+
+    const summaryDate =
+        document.getElementById("summaryDate");
+
+    const summaryTravelers =
+        document.getElementById("summaryTravelers");
+
+    const packagePrice =
+        document.getElementById("packagePrice");
+
+    const extraPrice =
+        document.getElementById("extraPrice");
+
+    const totalPrice =
+        document.getElementById("totalPrice");
+
+    const bookingStatus =
+        document.getElementById("bookingStatus");
+
+
+    // ==========================================
+    // PACKAGE PRICES
+    // ==========================================
+
+    const packagePrices = {
+
+        "Ella Adventure": 45000,
+
+        "Cultural Sri Lanka": 55000,
+
+        "Wild Escape": 60000,
+
+        "Southern Beach Escape": 40000 
+
+    };
+
+
+    // ==========================================
+    // GET PACKAGE FROM URL
+    // ==========================================
+
+    const urlParams =
+        new URLSearchParams(window.location.search);
+
+    const selectedPackage =
+        urlParams.get("package");
+
+
+    // Automatically put package into textbox
+
+    if (selectedPackage) {
+
+        packageInput.value =
+            decodeURIComponent(selectedPackage);
+
+    }
+
+
+    // ==========================================
+    // SET MINIMUM TRAVEL DATE
+    // ==========================================
+
+    const today = new Date();
+
+    today.setDate(today.getDate() + 3);
+
+    const minimumDate =
+        today.toISOString().split("T")[0];
+
+    travelDate.min = minimumDate;
+
+
+    // ==========================================
+    // UPDATE BOOKING
+    // ==========================================
+
+    function updateBooking() {
+
+        // --------------------------------------
+        // GET PACKAGE NAME
+        // --------------------------------------
+
+        const packageName =
+            packageInput.value.trim();
+
+
+        // --------------------------------------
+        // GET PACKAGE PRICE
+        // --------------------------------------
+
+        const price =
+            packagePrices[packageName] || 0;
+
+
+        // --------------------------------------
+        // GET NUMBER OF TRAVELERS
+        // --------------------------------------
+
+        const travelerCount =
+            Number(travelers.value) || 1;
+
+
+        // --------------------------------------
+        // ACCOMMODATION
+        // --------------------------------------
+
+        const accommodationCost =
+            accommodation.checked
+                ? Number(accommodation.value) || 0
+                : 0;
+
+
+        // --------------------------------------
+        // TRANSPORT
+        // --------------------------------------
+
+        const transportCost =
+            transport.checked
+                ? Number(transport.value) || 0
+                : 0;
+
+
+        // --------------------------------------
+        // CALCULATE PACKAGE TOTAL
+        // --------------------------------------
+
+        const baseTotal =
+            price * travelerCount;
+
+
+        // --------------------------------------
+        // CALCULATE EXTRA TOTAL
+        // --------------------------------------
+
+        const extraTotal =
+            (accommodationCost + transportCost)
+            * travelerCount;
+
+
+        // --------------------------------------
+        // CALCULATE FINAL TOTAL
+        // --------------------------------------
+
+        const finalTotal =
+            baseTotal + extraTotal;
+
+
+        // ======================================
+        // UPDATE PACKAGE SUMMARY
+        // ======================================
+
+        summaryPackage.textContent =
+            packageName || "Not selected";
+
+
+        // ======================================
+        // UPDATE TRAVEL DATE
+        // ======================================
+
+        if (travelDate.value) {
+
+            const date =
+                new Date(
+                    travelDate.value + "T00:00:00"
+                );
+
+            summaryDate.textContent =
+                date.toLocaleDateString(
+                    "en-GB",
+                    {
+                        day: "2-digit",
+                        month: "short",
+                        year: "numeric"
+                    }
+                );
+
+        } else {
+
+            summaryDate.textContent =
+                "Not selected";
+
+        }
+
+
+        // ======================================
+        // UPDATE TRAVELERS
+        // ======================================
+
+        summaryTravelers.textContent =
+            travelerCount;
+
+
+        // ======================================
+        // UPDATE PACKAGE PRICE
+        // ======================================
+
+        packagePrice.textContent =
+            "Rs. " +
+            baseTotal.toLocaleString();
+
+
+        // ======================================
+        // UPDATE EXTRA PRICE
+        // ======================================
+
+        extraPrice.textContent =
+            "Rs. " +
+            extraTotal.toLocaleString();
+
+
+        // ======================================
+        // UPDATE TOTAL PRICE
+        // ======================================
+
+        totalPrice.textContent =
+            "Rs. " +
+            finalTotal.toLocaleString();
+
+
+        // ======================================
+        // BOOKING STATUS
+        // ======================================
+
+        if (!packageName) {
+
+            bookingStatus.innerHTML =
+                '<i class="bi bi-info-circle"></i>' +
+                ' Select your package and travel date.';
+
+            bookingStatus.className =
+                "booking-status";
+
+            return;
+        }
+
+
+        if (!travelDate.value) {
+
+            bookingStatus.innerHTML =
+                '<i class="bi bi-calendar"></i>' +
+                ' Please select a travel date.';
+
+            bookingStatus.className =
+                "booking-status";
+
+            return;
+        }
+
+
+        bookingStatus.innerHTML =
+            '<i class="bi bi-check-circle"></i>' +
+            ' Booking is available for this date.';
+
+        bookingStatus.className =
+            "booking-status available";
+
+    }
+
+
+    // ==========================================
+    // UPDATE WHEN DATE CHANGES
+    // ==========================================
+
+    travelDate.addEventListener(
+        "change",
+        updateBooking
+    );
+
+
+    // ==========================================
+    // UPDATE WHEN TRAVELERS CHANGES
+    // ==========================================
+
+    travelers.addEventListener(
+        "change",
+        updateBooking
+    );
+
+
+    // ==========================================
+    // UPDATE WHEN ACCOMMODATION CHANGES
+    // ==========================================
+
+    accommodation.addEventListener(
+        "change",
+        updateBooking
+    );
+
+
+    // ==========================================
+    // UPDATE WHEN TRANSPORT CHANGES
+    // ==========================================
+
+    transport.addEventListener(
+        "change",
+        updateBooking
+    );
+
+
+    // ==========================================
+    // INITIAL UPDATE
+    // ==========================================
+
+    updateBooking();
+
+
+    
+</script>
+
+
+
+</body>
+
+</html>

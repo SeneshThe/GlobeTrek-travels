@@ -1,0 +1,564 @@
+
+/* =========================================
+   GLOBETREK PACKAGE DETAILS
+   MATCHING TOUR PACKAGES YELLOW THEME
+   ========================================= */
+
+:root {
+    --primary-color: #087f8c;
+    --secondary-color: #00b4d8;
+    --accent-color: #ffb703;
+    --dark-color: #020202;
+    --light-bg: #f8fbfc;
+    --text-color: #333333;
+    --white: #ffffff;
+}
+
+/* =========================================
+   RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    background-color: #000000;
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Sign In */
+
+.signin-btn {
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    padding: 7px 18px !important;
+    color: var(--accent-color) !important;
+}
+
+.signin-btn:hover {
+    background-color: var(--accent-color);
+    color: #000000 !important;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.package-hero {
+    position: relative;
+    height: 560px;
+    overflow: hidden;
+}
+
+.package-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.package-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.10),
+        rgba(0, 0, 0, 0.78)
+    );
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero-content h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    max-width: 650px;
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   PACKAGE INFORMATION
+   ========================================= */
+
+.package-info {
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin-top: -30px;
+    position: relative;
+    z-index: 5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info-item {
+    padding: 22px 15px;
+    text-align: center;
+    border-right: 1px solid #eeeeee;
+}
+
+.info-item:last-child {
+    border-right: none;
+}
+
+.info-icon {
+    font-size: 24px;
+    color: var(--accent-color);
+    margin-bottom: 7px;
+}
+
+.info-item h6 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.info-item span {
+    font-size: 13px;
+    color: #777777;
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+.package-section {
+    padding: 70px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    color: var(--accent-color);
+}
+
+.section-text {
+    line-height: 1.8;
+    color: #666666;
+}
+
+
+/* =========================================
+   DESTINATION CARDS
+   ========================================= */
+
+.destination-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px 15px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid #eeeeee;
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.destination-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background-color: #fff4cc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--accent-color);
+
+    font-size: 25px;
+}
+
+.destination-card h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.destination-card p {
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ITINERARY
+   ========================================= */
+
+.itinerary {
+    margin-top: 30px;
+}
+
+.itinerary-item {
+    position: relative;
+
+    padding: 20px 20px 20px 70px;
+
+    background-color: #ffffff;
+
+    border-left: 4px solid var(--accent-color);
+
+    margin-bottom: 15px;
+
+    border-radius: 0 8px 8px 0;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+
+    transition: 0.3s;
+}
+
+.itinerary-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.day-number {
+    position: absolute;
+
+    left: 15px;
+    top: 20px;
+
+    width: 38px;
+    height: 38px;
+
+    background-color: var(--accent-color);
+
+    color: #000000;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.itinerary-item h5 {
+    color: var(--dark-color);
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.itinerary-item p {
+    color: #777777;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* =========================================
+   INCLUDED / EXCLUDED
+   ========================================= */
+
+.include-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    height: 100%;
+}
+
+.include-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.include-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.include-box li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.include-box li i {
+    margin-right: 8px;
+}
+
+.included i {
+    color: #198754;
+}
+
+.excluded i {
+    color: #dc3545;
+}
+
+
+/* =========================================
+   BOOKING SECTION
+   ========================================= */
+
+.booking-section {
+    padding: 60px 0;
+    background-color: #fff9e6;
+}
+
+.booking-card {
+    background-color: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 35px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    border-top: 4px solid var(--accent-color);
+}
+
+.booking-card h3 {
+    color: var(--dark-color);
+    font-weight: 800;
+}
+
+.booking-card p {
+    color: #666666;
+}
+
+.price {
+    font-size: 38px;
+    color: var(--dark-color);
+    font-weight: 800;
+}
+
+.price span {
+    font-size: 14px;
+    color: #777777;
+    font-weight: 400;
+}
+
+
+/* =========================================
+   BOOK NOW BUTTON
+   ========================================= */
+
+.book-btn {
+    width: 100%;
+
+    background-color: var(--accent-color);
+
+    border: 2px solid var(--accent-color);
+
+    color: #000000;
+
+    padding: 13px;
+
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-btn {
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    color: var(--dark-color);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.back-btn i {
+    color: var(--accent-color);
+    margin-right: 5px;
+}
+
+.back-btn:hover {
+    color: var(--accent-color);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #000000;
+
+    color: #ffffff;
+
+    padding: 45px 0 20px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+footer h5 {
+    color: var(--accent-color);
+
+    font-size: 17px;
+
+    margin-bottom: 18px;
+}
+
+footer p,
+footer a {
+    color: #bbbbbb;
+
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid #333333;
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    text-align: center;
+
+    color: #888888;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .package-hero {
+        height: 450px;
+    }
+
+    .hero-content {
+        bottom: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .info-item {
+        border-right: none;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .package-section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .booking-card {
+        margin-top: 30px;
+    }
+
+}
