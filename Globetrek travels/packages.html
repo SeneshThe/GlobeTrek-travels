@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tour Packages | GlobeTrek Adventures</title>
+
+    <!-- Bootstrap - used only for responsive layout -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="packages.css">
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg package-navbar">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="logo trans.png" alt="GlobeTrek Adventures">
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="tour-packages.html">
+                        Tour Packages
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="accommodation.html">
+                        Accommodation
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="travel-guides.html">
+                        Travel Guides
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link signin" href="login.html">
+                        Sign In
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="packages-hero">
+
+    <div class="hero-content">
+
+        <h1>Tour Packages</h1>
+
+        <p>
+            Explore Sri Lanka with GlobeTrek Adventures
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro-section">
+
+    <div class="container">
+
+        <h2>Explore Our Packages</h2>
+
+        <p>
+            Choose from our carefully selected travel packages
+            and discover the beauty, culture and adventure of Sri Lanka.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FILTER ================= -->
+
+<section class="filter-section">
+
+    <div class="container">
+
+        <div class="filter-buttons">
+
+            <button
+                class="filter-btn active"
+                data-filter="all">
+
+                All
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="adventure">
+
+                Adventure
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="cultural">
+
+                Cultural
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="wildlife">
+
+                Wildlife
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="beach">
+
+                Beach
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PACKAGES ================= -->
+
+<section class="packages-section">
+
+    <div class="container">
+
+        <div class="row g-4" id="packageContainer">
+
+
+            <!-- ELLA ADVENTURE -->
+
+            <div
+                class="col-md-6 col-lg-6 package-item"
+                data-category="adventure">
+
+                <div class="package-card">
+
+                    <img
+                        src="images/ella.jpg"
+                        alt="Ella Adventure">
+
+                    <div class="package-content">
+
+                        <span class="package-category">
+                            Adventure
+                        </span>
+
+                        <h3>
+                            Ella Adventure
+                        </h3>
+
+                        <p>
+                            Explore the beautiful mountains,
+                            waterfalls and famous attractions
+                            around Ella.
+                        </p>
+
+                        <div class="package-info">
+
+                            <span>
+                                <i class="bi bi-calendar"></i>
+                                4 Days / 3 Nights
+                            </span>
+
+                            <span>
+                                <i class="bi bi-geo-alt"></i>
+                                Ella
+                            </span>
+
+                        </div>
+
+                        <div class="package-bottom">
+
+                            <div class="price">
+                                From <strong>Rs.45,000</strong>
+                            </div>
+
+                            <a
+                                href="ellaAdv.html"
+                                class="details-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CULTURAL SRI LANKA -->
+
+            <div
+                class="col-md-6 col-lg-6 package-item"
+                data-category="cultural">
+
+                <div class="package-card">
+
+                    <img
+                        src="images/sigiriya.jpg"
+                        alt="Cultural Sri Lanka">
+
+                    <div class="package-content">
+
+                        <span class="package-category">
+                            Cultural
+                        </span>
+
+                        <h3>
+                            Cultural Sri Lanka
+                        </h3>
+
+                        <p>
+                            Discover ancient cities, temples,
+                            historical sites and the rich culture
+                            of Sri Lanka.
+                        </p>
+
+                        <div class="package-info">
+
+                            <span>
+                                <i class="bi bi-calendar"></i>
+                                5 Days / 4 Nights
+                            </span>
+
+                            <span>
+                                <i class="bi bi-geo-alt"></i>
+                                Kandy & Sigiriya
+                            </span>
+
+                        </div>
+
+                        <div class="package-bottom">
+
+                            <div class="price">
+                                From <strong>Rs.55,000</strong>
+                            </div>
+
+                            <a
+                                href="culturalsrilanka.html"
+                                class="details-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- WILD ESCAPE -->
+
+            <div
+                class="col-md-6 col-lg-6 package-item"
+                data-category="wildlife">
+
+                <div class="package-card">
+
+                    <img
+                        src="images/yala.jpg"
+                        alt="Wild Escape">
+
+                    <div class="package-content">
+
+                        <span class="package-category">
+                            Wildlife
+                        </span>
+
+                        <h3>
+                            Wild Escape
+                        </h3>
+
+                        <p>
+                            Experience exciting safaris and
+                            discover elephants, leopards and
+                            other wildlife.
+                        </p>
+
+                        <div class="package-info">
+
+                            <span>
+                                <i class="bi bi-calendar"></i>
+                                4 Days / 3 Nights
+                            </span>
+
+                            <span>
+                                <i class="bi bi-geo-alt"></i>
+                                Yala
+                            </span>
+
+                        </div>
+
+                        <div class="package-bottom">
+
+                            <div class="price">
+                                From <strong>Rs.60,000</strong>
+                            </div>
+
+                            <a
+                                href="wildescape.html"
+                                class="details-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOUTHERN BEACH ESCAPE -->
+
+            <div
+                class="col-md-6 col-lg-6 package-item"
+                data-category="beach">
+
+                <div class="package-card">
+
+                    <img
+                        src="images/beach.jpg"
+                        alt="Tropical Beach Escape">
+
+                    <div class="package-content">
+
+                        <span class="package-category">
+                            Beach
+                        </span>
+
+                        <h3>
+                            Southern Beach Escape
+                        </h3>
+
+                        <p>
+                            Relax on beautiful beaches and enjoy
+                            the warm tropical atmosphere of
+                            Sri Lanka's southern coast.
+                        </p>
+
+                        <div class="package-info">
+
+                            <span>
+                                <i class="bi bi-calendar"></i>
+                                5 Days / 4 Nights
+                            </span>
+
+                            <span>
+                                <i class="bi bi-geo-alt"></i>
+                                South Coast
+                            </span>
+
+                        </div>
+
+                        <div class="package-bottom">
+
+                            <div class="price">
+                                From <strong>Rs.40,000</strong>
+                            </div>
+
+                            <a
+                                href="southescape.html"
+                                class="details-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- No Results -->
+
+        <div
+            id="noResults"
+            class="no-results">
+
+            <h3>No Packages Found</h3>
+
+            <p>
+                Please select another category.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="package-footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <img
+                    src="logo trans.png"
+                    class="footer-logo"
+                    alt="GlobeTrek Adventures">
+
+                <p>
+                    Explore Sri Lanka with GlobeTrek Adventures
+                    and create unforgettable travel memories.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+
+                <a href="tour-packages.html">
+                    Tour Packages
+                </a>
+
+                <a href="accommodation.html">
+                    Accommodation
+                </a>
+
+                <a href="travel-guides.html">
+                    Travel Guides
+                </a>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h4>Contact Us</h4>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Negombo, Sri Lanka
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +94 77 123 4567
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@globetrek.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GlobeTrek Adventures.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Package Filter -->
+
+<script>
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+const packages =
+    document.querySelectorAll(".package-item");
+
+const noResults =
+    document.getElementById("noResults");
+
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        const filter =
+            this.getAttribute("data-filter");
+
+        let count = 0;
+
+
+        /* Change active button */
+
+        filterButtons.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+        this.classList.add("active");
+
+
+        /* Filter packages */
+
+        packages.forEach(packageItem => {
+
+            const category =
+                packageItem.getAttribute("data-category");
+
+
+            if (
+                filter === "all" ||
+                category === filter
+            ) {
+
+                packageItem.style.display = "block";
+
+                count++;
+
+            } else {
+
+                packageItem.style.display = "none";
+
+            }
+
+        });
+
+
+        /* No results */
+
+        if (count === 0) {
+
+            noResults.style.display = "block";
+
+        } else {
+
+            noResults.style.display = "none";
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
+
